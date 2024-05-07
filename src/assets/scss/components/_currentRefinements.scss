@@ -1,0 +1,35 @@
+/**
+* CurrentRefinements
+*/
+
+.ais-CurrentRefinements-list {
+    display: inline-grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+  }
+  
+  .ais-CurrentRefinements-item {
+    align-items: center;
+
+    display: flex;
+    display: inline-flex;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    min-height: 1.5rem;
+    padding: 0.05rem 0.5rem;
+  }
+  
+  .ais-CurrentRefinements-category {
+    display: flex;
+    margin-left: 0.5rem;
+    background-color: $green700;
+    border: 1px solid $green100;
+    border-radius: 3px;
+  }
+  
+  .ais-CurrentRefinements-delete {
+    color: $green100;
+    height: 100%;
+    margin-left: 0.25rem;
+    outline-width: 0;
+  }

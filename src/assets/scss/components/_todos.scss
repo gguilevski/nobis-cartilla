@@ -1,0 +1,518 @@
+
+
+
+/**
+* No Results
+*/
+
+.ais-Menu-noResults,
+.ais-HierarchicalMenu-noResults,
+.ais-RefinementList-noResults {
+  color: $green600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+}
+
+/**
+* Selectors
+*/
+
+.ais-MenuSelect-select,
+.ais-HitsPerPage-select,
+.ais-SortBy-select {
+  appearance: none;
+  background-color: $white;
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23777aaf" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+    linear-gradient(-180deg, $white, $grey50);
+  background-position: right 1rem center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 10px, auto;
+  border: 1px solid $green200;
+  border-radius: 3px;
+  box-shadow: rgba($green900, 0.05) 0 1px 0 0;
+  color: $green900;
+  cursor: pointer;
+  font: inherit;
+  height: 2.5rem;
+  outline: currentcolor none medium;
+  padding: 0 2.5rem 0 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.ais-HitsPerPage-select:-moz-focusring,
+.ais-HitsPerPage-select::-moz-focus-inner,
+.ais-SortBy-select:-moz-focusring,
+.ais-SortBy-select::-moz-focus-inner {
+  color: transparent;
+  outline: currentcolor none medium;
+}
+
+.ais-HitsPerPage-select>option:not(:checked),
+.ais-SortBy-select>option:not(:checked) {
+  color: $green900;
+}
+
+.ais-HitsPerPage-select>option:disabled,
+.ais-SortBy-select>option:disabled {
+  color: $green300;
+}
+
+.ais-HitsPerPage-select:hover,
+.ais-SortBy-select:hover {
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23777aaf" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+    linear-gradient(-180deg, $grey50, $green100);
+  border-color: $green200;
+}
+
+.ais-HitsPerPage-select:focus,
+.ais-SortBy-select:focus {
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23777aaf" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+    linear-gradient(-180deg, $white, $green100);
+  border-color: $nebula600;
+  box-shadow: $nebula600 0 0 0 1px, rgba($green900, 0.05) 0 2px 0 0;
+}
+
+.ais-HitsPerPage-select:disabled,
+.ais-SortBy-select:disabled {
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23b6b7d5" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+    linear-gradient(-180deg, $white, $green100);
+  border-color: #efeff5;
+  box-shadow: none;
+  color: $green300;
+  cursor: not-allowed;
+}
+
+////////////////
+// Basics
+////////////////
+
+/**
+* Panel
+*/
+
+.ais-Panel {
+  margin-bottom: 2rem;
+}
+
+.ais-Panel-header {
+  color: $green600;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.ais-Panel-footer {
+  color: $green600;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  margin-top: 1rem;
+}
+
+.ais-Panel--collapsible {
+  position: relative;
+}
+
+.ais-Panel--collapsible .ais-Panel-collapseButton {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ais-Panel--collapsed .ais-Panel-body,
+.ais-Panel--collapsed .ais-Panel-footer {
+  display: none;
+}
+
+
+/**
+* VoiceSearch
+*/
+
+.ais-VoiceSearch-button {
+  color: $green600;
+  height: 48px;
+  width: 48px;
+}
+
+.ais-VoiceSearch-button svg {
+  color: currentcolor;
+}
+
+////////////////
+// Results
+////////////////
+
+/**
+* Highlighting and Snippeting
+*/
+
+.ais-Highlight-highlighted,
+.ais-Snippet-highlighted {
+  background-color: rgba($nebula500, 0.1);
+  color: $nebula500;
+  font-style: normal;
+}
+
+/**
+* ReverseHighlighting and ReverseSnippeting
+*/
+
+.ais-ReverseHighlight-highlighted,
+.ais-ReverseSnippet-highlighted {
+  font-weight: bold;
+  font-style: normal;
+  background: none;
+}
+
+
+/**
+* GeoSearch
+*/
+
+.ais-GeoSearch {
+  position: relative;
+}
+
+.ais-GeoSearch-control {
+  left: 3.75rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.ais-GeoSearch-label {
+  align-items: center;
+  background-color: $green100;
+  border: 1px solid $green300;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  min-height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.ais-GeoSearch-label,
+.ais-GeoSearch-redo,
+.ais-GeoSearch-reset {
+  white-space: nowrap;
+}
+
+.ais-GeoSearch-reset {
+  bottom: 1.25rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+
+
+/**
+* NumericMenu
+*/
+
+.ais-NumericMenu-label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.ais-NumericMenu-radio {
+  appearance: none;
+  background: $white;
+  border: 1px solid $green200;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 4px 0 rgba($green500, 0.3);
+  height: 16px;
+  margin: 0 0.5rem 0 0;
+  outline: 0;
+  position: relative;
+  width: 16px;
+}
+
+.ais-NumericMenu-radio:checked,
+.ais-NumericMenu-radio:focus {
+  border-color: $nebula600;
+  box-shadow: 0 1px 0 0 rgba($green900, 0.05);
+}
+
+.ais-NumericMenu-radio:focus {
+  box-shadow: 0 0 0 1px $nebula600, 0 1px 0 0 rgba($green900, 0.05);
+}
+
+.ais-NumericMenu-radio:checked:after {
+  background: $nebula600;
+  border-radius: 50%;
+  bottom: 4px;
+  content: "";
+  left: 4px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+/**
+* HierarchicalMenu
+*/
+
+.ais-HierarchicalMenu-list .ais-HierarchicalMenu-list {
+  margin-left: 1.5rem;
+}
+
+.ais-HierarchicalMenu-link::before {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23b6b7d5%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%2218%2015%2012%209%206%2015%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  margin-right: 0.5rem;
+  user-select: none;
+  width: 1rem;
+}
+
+.ais-HierarchicalMenu-item--selected>.ais-HierarchicalMenu-link::before {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%235468ff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+}
+
+/**
+* RatingMenu
+*/
+
+.ais-RatingMenu-starIcon {
+  margin-right: 0.25rem;
+}
+
+.ais-RatingMenu-starIcon {
+  fill: $green600;
+  position: relative;
+  width: 16px;
+}
+
+.ais-RatingMenu-item--disabled .ais-RatingMenu-starIcon {
+  fill: $green300;
+}
+
+.ais-RatingMenu-item--disabled .ais-RatingMenu-count,
+.ais-RatingMenu-item--disabled .ais-RatingMenu-label {
+  color: $green300;
+}
+
+/**
+* ClearRefinements
+*/
+
+.ais-ClearRefinements-button {
+  width: 100%;
+}
+
+
+
+/**
+* ToggleRefinement
+*/
+
+.ais-ToggleRefinement-label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.ais-ToggleRefinement-checkbox {
+  appearance: none;
+  background: rgba(#414247, 0.08);
+  background: $green100;
+  border-radius: 9999px;
+  box-shadow: inset 0 1px 4px 0 rgba($green500, 0.4);
+  height: 18px;
+  pointer-events: none;
+  position: relative;
+  width: 32px;
+}
+
+.ais-ToggleRefinement-checkbox:checked {
+  background: $nebula600;
+  box-shadow: inset 0 1px 4px 0 rgba($green900, 0.1);
+}
+
+.ais-ToggleRefinement-checkbox:focus {
+  outline: 0;
+}
+
+.ais-ToggleRefinement-checkbox::after {
+  background: linear-gradient(-180deg, $white, $green100);
+  border-radius: 9999px;
+  box-shadow: 1px 1px 1px 0 rgba($green900, 0.05);
+  content: "";
+  height: 16px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  transition: all 100ms ease-in-out;
+  width: 16px;
+}
+
+.ais-ToggleRefinement-checkbox:checked::after {
+  transform: translateX(14px);
+}
+
+/**
+* RangeInput
+*/
+
+.ais-RangeInput-input {
+  align-items: center;
+  background-color: $white;
+  border: 1px solid $green200;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 4px 0 rgba($green500, 0.3);
+  caret-color: $green600;
+  color: $green900;
+  cursor: text;
+  display: flex;
+  flex: 1;
+  font-size: 0.875rem;
+  height: 2rem;
+  line-height: 1.25rem;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.ais-RangeInput-input:focus {
+  border-color: $nebula600;
+  box-shadow: 0 1px 0 0 rgba($green900, 0.05);
+  outline: 0;
+}
+
+.ais-RangeInput-separator {
+  margin: 0 0.5rem;
+}
+
+.ais-RangeInput-submit {
+  margin-left: 0.5rem;
+}
+
+/**
+* RangeSlider
+*/
+
+.ais-RangeSlider .rheostat {
+  margin: 40px 6px;
+}
+
+.ais-RangeSlider .rheostat-horizontal {
+  cursor: pointer;
+  width: calc(100% - 15px);
+}
+
+.ais-RangeSlider .rheostat-background {
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0.5px 0 0 rgba(255, 255, 255, 0.05);
+  height: 4px;
+}
+
+.ais-RangeSlider .rheostat-progress {
+  background-color: $nebula600;
+  border-radius: 3px;
+  height: 4px;
+  max-width: 100%;
+  top: 0;
+}
+
+.ais-RangeSlider .rheostat-tooltip {
+  font-weight: bold;
+  user-select: none;
+}
+
+.ais-RangeSlider .rheostat-handle {
+  background-color: $white;
+  background-image: linear-gradient(-180deg, $white, $grey50);
+  border: 1px solid $green200;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 0 rgba($green900, 0.05);
+  height: 24px;
+  margin-left: -6px;
+  top: -11px;
+  width: 12px;
+}
+
+.ais-RangeSlider .rheostat-handle::before,
+.ais-RangeSlider .rheostat-handle::after {
+  background-color: $green200;
+  content: "";
+  height: 12px;
+  position: absolute;
+  top: 6px;
+  width: 1px;
+}
+
+.ais-RangeSlider .rheostat-handle::before {
+  left: 4px;
+}
+
+.ais-RangeSlider .rheostat-handle::after {
+  right: 4px;
+}
+
+.ais-RangeSlider .rheostat-marker {
+  background-color: $green200;
+}
+
+////////////////
+// Pagination
+////////////////
+
+
+////////////////
+// Metadata
+////////////////
+
+/**
+* Breadrumb
+*/
+
+.ais-Breadcrumb-link,
+.ais-Breadcrumb-separator {
+  color: $green600;
+}
+
+.ais-Breadcrumb-separator {
+  display: flex;
+  margin: 0 0.5rem;
+}
+
+.ais-Breadcrumb-item--selected {
+  font-weight: 600;
+}
+
+.ais-Breadcrumb-item--selected .ais-Breadcrumb-separator {
+  font-weight: normal;
+}
+
+////////////////
+// Mobile specifics
+////////////////
+
+@media (max-width: $break-medium) {
+
+  .ais-SearchBox-input,
+  .ais-RangeInput-input {
+    // iOS Safari auto-zooms on the input when the input font size is lower
+    // than 16px. This allows to prevent that behavior and to make the text
+    // more readable.
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,75 @@
+@import "reset.scss";
+
+@import "./variables/colors";
+
+@import "./components/hits.scss";
+@import "./components/labels.scss";
+@import "./components/searchBox.scss";
+@import "./components/currentRefinements.scss";
+
+
+
+
+// @import './variables/spacing';
+// @import './variables/typography';
+
+////////////////
+// Shared
+////////////////
+
+// See https://github.com/algolia/satellite/blob/8f9bdfedc5562f459e8ac2ca9e4f94e4e6cf915f/packages/satellite/src/styles/colors.js
+
+
+
+$break-medium: 767px;
+
+////////////////
+// Shared
+////////////////
+
+/**
+* Reset
+*/
+
+[class^="ais-"] {
+  box-sizing: border-box;
+}
+
+/**
+* Disabled
+*/
+
+[class^='ais-'][class$='--disabled'],
+// We need to target all elements for widgets containing
+// multiple sub elements (e.g. RangeSlider, RatingMenu).
+[class^='ais-'][class$='--disabled'] *,
+// Disabled VoiceSearch root CSS class doesn't contain `--disabled`.
+.ais-VoiceSearch-button:disabled {
+  cursor: not-allowed;
+}
+
+
+/**
+* Pagination
+*/
+
+.ais-Pagination-item:first-child>.ais-Pagination-link {
+  border-radius: 3px 0 0 3px;
+}
+
+.ais-Pagination-item+.ais-Pagination-item>.ais-Pagination-link {
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.ais-Pagination-item:last-child>.ais-Pagination-link {
+  border-radius: 0 3px 3px 0;
+}
+
+.ais-Pagination-item {
+  display: inline-block;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+  font-weight: bold;
+}

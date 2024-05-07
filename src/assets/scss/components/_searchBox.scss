@@ -1,0 +1,133 @@
+/**
+* SearchBox
+*/
+
+.ais-SearchBox-form {
+    background-color: $white;
+    display: flex;
+    font-size: 0.875rem;
+    height: 2.5rem;
+    line-height: 1.25rem;
+    position: relative;
+    width: 100%;
+}
+
+.ais-SearchBox-form::before {
+    background: rgba(0, 0, 0, 0) url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%235a5e9a%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%228%22%3E%3C%2Fcircle%3E%3Cline%20x1%3D%2221%22%20y1%3D%2221%22%20x2%3D%2216.65%22%20y2%3D%2216.65%22%3E%3C%2Fline%3E%3C%2Fsvg%3E") repeat scroll 0% 0%;
+    content: "";
+    height: 1rem;
+    left: 1rem;
+    margin-top: -0.5rem;
+    position: absolute;
+    top: 50%;
+    width: 1rem;
+}
+
+.ais-SearchBox-input {
+    appearance: none;
+    background-color: $white;
+    border: 1px solid $green200;
+    border-radius: 3px;
+    box-shadow: rgba($green500, 0.3) 0 1px 4px 0 inset;
+    caret-color: $green600;
+    color: $green900;
+    flex: 1 1 0%;
+    font: inherit;
+    max-width: 100%;
+    padding-left: 2.5rem;
+}
+
+.ais-SearchBox-input::-webkit-input-placeholder {
+    color: $green600;
+}
+
+.ais-SearchBox-input::placeholder {
+    color: $green600;
+}
+
+.ais-SearchBox-input:focus {
+    border-color: $nebula600;
+    box-shadow: rgba($green900, 0.05) 0 1px 0 0;
+    outline: currentcolor none medium;
+}
+
+.ais-SearchBox-input:disabled {
+    background: rgba(0, 0, 0, 0) linear-gradient(-180deg, $white, $green100) repeat scroll 0% 0%;
+    border-color: #efeff5;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.ais-SearchBox-input:disabled::-webkit-input-placeholder {
+    color: $green300;
+    pointer-events: none;
+}
+
+.ais-SearchBox-input:disabled::placeholder {
+    color: $green300;
+    pointer-events: none;
+}
+
+.ais-SearchBox-input::-webkit-search-cancel-button,
+.ais-SearchBox-input::-webkit-search-decoration,
+.ais-SearchBox-input::-webkit-search-results-button,
+.ais-SearchBox-input::-webkit-search-results-decoration {
+    appearance: none;
+}
+
+.ais-SearchBox-loadingIndicator,
+.ais-SearchBox-reset {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    fill: $green700;
+    height: 20px;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.ais-SearchBox-reset:focus {
+    background: $green300;
+    fill: $white;
+    outline: 0;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-loadingIndicator,
+.ais-RefinementList-searchBox .ais-SearchBox-reset {
+    right: 0.5rem;
+}
+
+.ais-SearchBox-loadingIndicator[hidden],
+.ais-SearchBox-reset[hidden] {
+    display: none;
+}
+
+// We ignore the `submit` button in this theme because it's replaced by the
+// Algolia magnifier glass.
+.ais-SearchBox-submit {
+    display: none;
+}
+
+.ais-Menu-searchBox,
+.ais-RefinementList-searchBox {
+    margin-bottom: 0.5rem;
+}
+
+.ais-Menu-searchBox .ais-SearchBox-form,
+.ais-RefinementList-searchBox .ais-SearchBox-form {
+    height: 2rem;
+}
+
+.ais-Menu-searchBox .ais-SearchBox-form::before,
+.ais-RefinementList-searchBox .ais-SearchBox-form::before {
+    left: 0.5rem;
+}
+
+.ais-Menu-searchBox .ais-SearchBox-input,
+.ais-RefinementList-searchBox .ais-SearchBox-input {
+    padding-left: 2rem;
+}

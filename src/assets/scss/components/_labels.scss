@@ -1,0 +1,117 @@
+/**
+* Labels
+*/
+
+.ais-NumericMenu-label,
+.ais-ToggleRefinement-label,
+.ais-HierarchicalMenu-item,
+.ais-Menu-item,
+.ais-RatingMenu-item,
+.ais-RefinementList-item {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+.ais-HierarchicalMenu-link,
+.ais-Menu-link,
+.ais-RatingMenu-link,
+.ais-RefinementList-label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.ais-Breadcrumb-link,
+.ais-HierarchicalMenu-link,
+.ais-Menu-link,
+.ais-RatingMenu-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ais-Breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.ais-HierarchicalMenu-label,
+.ais-Menu-label,
+.ais-RefinementList-labelText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ais-HierarchicalMenu-item--selected>.ais-HierarchicalMenu-link>.ais-HierarchicalMenu-label,
+.ais-Menu-item--selected .ais-Menu-label,
+.ais-RefinementList-item--selected,
+.ais-RatingMenu-item--selected {
+  font-weight: 600;
+}
+
+////////////////
+// Refinements
+////////////////
+
+/**
+* RefinementList
+*/
+
+.ais-RefinementList-checkbox,
+.ais-GeoSearch-input {
+  appearance: none;
+  background-color: $white;
+  background-position: 50%;
+  background-size: 180%;
+  border: 1px solid currentcolor;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 4px 0 rgba($green500, 0.4);
+  color: $green200;
+  cursor: inherit;
+  height: 1rem;
+  margin: 0 0.5rem 0 0;
+  min-width: 1rem;
+}
+
+.ais-RefinementList-item--selected .ais-RefinementList-checkbox,
+.ais-GeoSearch-input:checked {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%235468ff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+  background-size: 14px;
+  border-color: currentcolor;
+  box-shadow: rgba($green900, 0.05) 0 1px 0 0 inset;
+  color: $nebula600;
+}
+
+.ais-RefinementList-checkbox:focus,
+.ais-GeoSearch-input:focus {
+  outline: currentcolor none medium;
+}
+
+.ais-RefinementList-item--selected .ais-RefinementList-checkbox:focus,
+.ais-GeoSearch-input:checked:focus {
+  box-shadow: rgba($green900, 0.05) 0 1px 0 0 inset, currentcolor 0 0 0 1px;
+}
+
+/**
+* Count
+*/
+
+.ais-ToggleRefinement-count,
+.ais-HierarchicalMenu-count,
+.ais-Menu-count,
+.ais-RatingMenu-count,
+.ais-RefinementList-count {
+  background: $green100 none repeat scroll 0% 0%;
+  border: 1px solid $green300;
+  border-radius: 99999px;
+  color: $green900;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  overflow: hidden;
+  padding: 0 0.25rem;
+}
