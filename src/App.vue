@@ -5,5 +5,6 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
 
 <h1>hola cartilla</h1>
+<h2>Test 2</h2>
 
 </template>
